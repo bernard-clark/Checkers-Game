@@ -1,0 +1,64 @@
+/* Basic styling for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the title */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Styling for the game board container */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px); /* 8 columns of 50px each */
+    grid-template-rows: repeat(8, 50px); /* 8 rows of 50px each */
+    gap: 0; /* No gap between squares */
+    border: 2px solid #333; /* Border around the board */
+}
+
+/* Styling for each square on the board */
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for black squares */
+.square.black {
+    background-color: #333;
+}
+
+/* Styling for white squares */
+.square.white {
+    background-color: #f0f0f0;
+}
+
+/* Styling for game pieces */
+.piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Round pieces */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+/* Styling for red pieces */
+.piece.red {
+    background-color: red;
+}
+
+/* Styling for black pieces */
+.piece.black {
+    background-color: black;
+}
+
+/* Styling for a selected piece */
+.piece.selected {
+    box-shadow: 0 0 10px yellow; /* Highlight selected piece */
+}
